@@ -20,7 +20,7 @@ export default function Recipe() {
   return (
     <main className="p-4">
       <p className="font-semibold text-[20px] mb-3">Our recipes</p>
-      <div>
+      <div className=" grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {recipes.map((r, i) => (
           <FoodCard recipe={r} key={i} />
         ))}
