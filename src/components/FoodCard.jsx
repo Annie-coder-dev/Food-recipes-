@@ -14,12 +14,9 @@ export default function FoodCard({ recipe }) {
       {/* food description */}
       <div className=" py-4 px-3">
         <h3 className="text-xl font-bold mb-2"> {recipe.name}</h3>
-        <p className="mb-3 leading-relaxed">
-          {recipe.instructions[0]} {recipe.instructions[1]}..
-        </p>
+        <p className="mb-3 leading-relaxed">{recipe.instructions[1]}..</p>
         <div className="flex justify-between items-center">
           <p className="block w-fit">
-            {" "}
             <span className=" bg-red-300 px-1.5">{recipe.rating}</span>⭐
           </p>
           <p className="flex gap-1.5">
