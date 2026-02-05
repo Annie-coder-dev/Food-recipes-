@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-red-500 px-7 py-5">
+    <footer className="bg-red-500 px-7 py-5 mt-5 md:px-20">
       <div className="flex justify-between mb-2.5">
         <div>
-        <h2 className="text-white font-semiboldbold text-[20px] mb-1.5">Quick Links</h2>
+        <h2 className="text-white font-semibold text-[22px] mb-1.5">Quick Links</h2>
         <ul>
           <li className="text-white">Home</li>
           <li className="text-white">Recipes</li>
@@ -14,7 +14,7 @@ export default function Footer() {
         </ul>
       </div>
       <div>
-        <h2 className="text-white font-semiboldbold text-[20px] mb-1.5">Popular Categories</h2>
+        <h2 className="text-white font-semibold text-[22px] mb-1.5">Popular Categories</h2>
         <ul>
           <li className="text-white">Breakfast</li>
           <li className="text-white">Lunch</li>

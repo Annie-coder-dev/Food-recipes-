@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 
 export default function SideBar({ isNavOpen }) {
+
+
   return (
     // Sidebar for mobile devices
     <aside
@@ -8,16 +10,16 @@ export default function SideBar({ isNavOpen }) {
     >
       <ul>
         
-        <li className="p-4 text-white text-2xl">
+        <li className="p-4 text-white text-2xl" onClick={isNavOpen ? "translate-x-0" : "-translate-x-full"}>
           <Link to="/">Home</Link>
         </li>
-        <li className="p-4 text-white text-2xl">
+        <li className="p-4 text-white text-2xl" onClick={isNavOpen ? "translate-x-0" : "-translate-x-full"}>
           <Link to="/product">Recipes</Link>
         </li>
-        <li className="p-4 text-white text-2xl">
+        <li className="p-4 text-white text-2xl" onClick={isNavOpen ? "translate-x-0" : "-translate-x-full"}>
           <Link to="/category">Category</Link>
         </li>
-        <li className="p-4 text-white text-2xl">
+        <li className="p-4 text-white text-2xl" onClick={isNavOpen ? "translate-x-0" : "-translate-x-full"}>
           <Link to="/support">Support</Link>
         </li>
       </ul>
