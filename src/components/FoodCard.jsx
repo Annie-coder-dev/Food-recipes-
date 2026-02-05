@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function FoodCard({ recipe }) {
   return (
@@ -24,9 +25,9 @@ export default function FoodCard({ recipe }) {
             <span className="bg-red-50 px-3 rounded text-[13px] text-red-600">{recipe.tags[1]}</span>
           </p>
         </div>
-        <button className="my-4 px-5 rounded bg-red-400 text-white py-1 hover:bg-red-500 hover:scale-110">
+        <Link to={`/${recipe.id}`} className="my-4 px-5 rounded bg-red-400 text-white py-1 hover:bg-red-500 hover:scale-110">
           View
-        </button>
+        </Link>
       </div>
     </div>
   );
